@@ -1,0 +1,73 @@
+{
+  "home": {
+    "welcome": "Welcome",
+    "hotel": "Elexus Hotel & Resort",
+    "actions": {
+      "towels": "Towels",
+      "spa": "Spa",
+      "wifi": "Wi-Fi",
+      "reception": "Reception"
+    },
+    "wifi_password": "Password: ElexusGuest2024",
+    "today": "Today at the hotel",
+    "noSchedule": "Schedule is being updated"
+  },
+  "restaurants": {
+    "title": "Restaurants & Bars",
+    "included": "Included",
+    "paid": "Extra charge",
+    "reservation": "Reservation required",
+    "noReservation": "No reservation needed",
+    "hours": "Opening hours"
+  },
+  "included": {
+    "title": "What's included",
+    "subtitle": "All Inclusive — what's in your package"
+  },
+  "spa": {
+    "title": "Spa & Wellness",
+    "book": "Book",
+    "duration": "min",
+    "from": "from $"
+  },
+  "requests": {
+    "title": "My Requests",
+    "new": "New Request",
+    "roomLabel": "Room number",
+    "roomPlaceholder": "e.g. 305",
+    "typeLabel": "Request type",
+    "noteLabel": "Note (optional)",
+    "notePlaceholder": "e.g. 2 large towels",
+    "submit": "Submit request",
+    "submitting": "Sending...",
+    "types": {
+      "towels": "Towels / Housekeeping",
+      "spa_booking": "Spa booking",
+      "reception": "Reception request",
+      "room_service": "Room service"
+    },
+    "status": {
+      "new": "Received",
+      "in_progress": "In progress",
+      "done": "Done"
+    },
+    "empty": "No requests yet",
+    "sent": "Request sent!",
+    "history": "Request history"
+  },
+  "nav": {
+    "home": "Home",
+    "restaurants": "Restaurants",
+    "included": "Included",
+    "spa": "Spa",
+    "requests": "Requests"
+  },
+  "schedule": {
+    "category": {
+      "animation": "Animation",
+      "show": "Show",
+      "sports": "Sports",
+      "kids": "Kids"
+    }
+  }
+}

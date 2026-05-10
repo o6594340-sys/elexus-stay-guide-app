@@ -1,0 +1,73 @@
+{
+  "home": {
+    "welcome": "Добро пожаловать",
+    "hotel": "Elexus Hotel & Resort",
+    "actions": {
+      "towels": "Полотенца",
+      "spa": "Спа",
+      "wifi": "Wi-Fi",
+      "reception": "Ресепшен"
+    },
+    "wifi_password": "Пароль: ElexusGuest2024",
+    "today": "Сегодня в отеле",
+    "noSchedule": "Расписание обновляется"
+  },
+  "restaurants": {
+    "title": "Рестораны и бары",
+    "included": "Включено",
+    "paid": "Платно",
+    "reservation": "Нужна резервация",
+    "noReservation": "Без резервации",
+    "hours": "Часы работы"
+  },
+  "included": {
+    "title": "Что включено",
+    "subtitle": "All Inclusive — что входит в вашу программу"
+  },
+  "spa": {
+    "title": "Спа и уход",
+    "book": "Записаться",
+    "duration": "мин",
+    "from": "от $"
+  },
+  "requests": {
+    "title": "Мои запросы",
+    "new": "Новый запрос",
+    "roomLabel": "Номер комнаты",
+    "roomPlaceholder": "Например: 305",
+    "typeLabel": "Тип запроса",
+    "noteLabel": "Комментарий (необязательно)",
+    "notePlaceholder": "Например: 2 больших полотенца",
+    "submit": "Отправить запрос",
+    "submitting": "Отправляю...",
+    "types": {
+      "towels": "Полотенца / Хаускипинг",
+      "spa_booking": "Запись в спа",
+      "reception": "Вопрос на ресепшен",
+      "room_service": "Рум-сервис"
+    },
+    "status": {
+      "new": "Принят",
+      "in_progress": "В работе",
+      "done": "Выполнен"
+    },
+    "empty": "Запросов ещё нет",
+    "sent": "Запрос отправлен!",
+    "history": "История запросов"
+  },
+  "nav": {
+    "home": "Главная",
+    "restaurants": "Рестораны",
+    "included": "Включено",
+    "spa": "Спа",
+    "requests": "Запросы"
+  },
+  "schedule": {
+    "category": {
+      "animation": "Анимация",
+      "show": "Шоу",
+      "sports": "Спорт",
+      "kids": "Дети"
+    }
+  }
+}
