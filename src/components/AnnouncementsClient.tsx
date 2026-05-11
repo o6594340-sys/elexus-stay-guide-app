@@ -6,11 +6,7 @@ import { DEMO_ANNOUNCEMENTS } from '@/lib/demo-data';
 
 const ANNOUNCE_KEY = 'sg_announcements';
 
-interface Props {
-  locale: string;
-}
-
-export default function AnnouncementsClient({ locale }: Props) {
+export default function AnnouncementsClient({ locale }: { locale: string }) {
   const [announcements, setAnnouncements] = useState<Announcement[]>(DEMO_ANNOUNCEMENTS);
 
   useEffect(() => {
@@ -27,8 +23,18 @@ export default function AnnouncementsClient({ locale }: Props) {
   if (urgent.length === 0) return null;
 
   return (
-    <div className="mx-4 mt-4 p-3 bg-red-50 border border-red-200 rounded-xl text-sm text-red-800 font-medium">
-      🚨 {locale === 'ru' ? urgent[0].title_ru : urgent[0].title_en}
+    <div
+      className="mx-4 mt-4 px-4 py-3 rounded-xl flex items-start gap-3"
+      style={{
+        background: 'rgba(201,169,110,0.08)',
+        border: '1px solid rgba(201,169,110,0.3)',
+        borderLeft: '3px solid #c9a96e',
+      }}
+    >
+      <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#c9a96e', marginTop: 5, flexShrink: 0 }} />
+      <p style={{ fontSize: 13, fontWeight: 500, color: '#1e2a35', lineHeight: 1.5 }}>
+        {locale === 'ru' ? urgent[0].title_ru : urgent[0].title_en}
+      </p>
     </div>
   );
 }

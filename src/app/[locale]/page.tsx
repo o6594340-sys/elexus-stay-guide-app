@@ -14,17 +14,40 @@ export default async function HomePage({
 
   return (
     <div>
+      {/* Header */}
       <div
-        className="px-4 pt-12 pb-6 text-white"
-        style={{ background: 'linear-gradient(135deg, #1a3a5c 0%, #2563eb 100%)' }}
+        className="px-6 pt-12 pb-8 text-white relative overflow-hidden"
+        style={{ background: 'linear-gradient(160deg, #0c1824 0%, #162336 100%)' }}
       >
-        <div className="flex justify-between items-start mb-2">
+        {/* Top gold line */}
+        <div
+          className="absolute top-0 left-0 right-0 h-px"
+          style={{ background: 'linear-gradient(90deg, transparent, #c9a96e, transparent)' }}
+        />
+
+        <div className="flex justify-between items-start">
           <div>
-            <p className="text-sm text-blue-200">{t('welcome')}</p>
-            <h1 className="text-xl font-bold leading-tight">{t('hotel')}</h1>
+            <p
+              className="text-xs uppercase tracking-[0.2em] mb-2"
+              style={{ color: '#c9a96e', fontWeight: 500 }}
+            >
+              {t('welcome')}
+            </p>
+            <h1
+              className="font-display text-[1.6rem] font-semibold leading-[1.15]"
+              style={{ color: '#fff', letterSpacing: '-0.01em' }}
+            >
+              {t('hotel')}
+            </h1>
           </div>
           <LangSwitch />
         </div>
+
+        {/* Gold accent line */}
+        <div
+          className="mt-5 h-px w-10"
+          style={{ background: '#c9a96e', opacity: 0.7 }}
+        />
       </div>
 
       <AnnouncementsClient locale={locale} />

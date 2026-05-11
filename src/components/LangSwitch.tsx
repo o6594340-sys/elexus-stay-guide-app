@@ -18,7 +18,18 @@ export default function LangSwitch() {
   return (
     <button
       onClick={toggle}
-      className="text-xs font-semibold bg-white/20 hover:bg-white/30 text-white px-2 py-1 rounded-full transition-colors"
+      style={{
+        fontSize: 11,
+        fontWeight: 600,
+        letterSpacing: '0.1em',
+        color: '#c9a96e',
+        background: 'rgba(201,169,110,0.15)',
+        border: '1px solid rgba(201,169,110,0.3)',
+        borderRadius: 20,
+        padding: '4px 12px',
+        transition: 'background 150ms ease',
+        cursor: 'pointer',
+      }}
     >
       {locale === 'ru' ? 'EN' : 'RU'}
     </button>

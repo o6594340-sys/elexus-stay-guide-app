@@ -29,7 +29,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className="max-w-md mx-auto min-h-screen bg-white shadow-sm relative">
+      <div className="max-w-md mx-auto min-h-screen shadow-sm relative" style={{ background: '#faf9f6' }}>
         <main className="pb-20">{children}</main>
         <Nav />
         <AddToHomeScreen />
