@@ -9,6 +9,13 @@
       "reception": "Reception"
     },
     "wifi_password": "Password: ElexusGuest2024",
+    "wifi": {
+      "title": "Wi-Fi",
+      "network": "Network: ElexusGuest",
+      "passwordLabel": "Password",
+      "password": "ElexusGuest2024",
+      "close": "Got it"
+    },
     "today": "Today at the hotel",
     "noSchedule": "Schedule is being updated"
   },
@@ -59,8 +66,27 @@
     "home": "Home",
     "restaurants": "Restaurants",
     "included": "Included",
-    "spa": "Spa",
+    "map": "Map",
     "requests": "Requests"
+  },
+  "map": {
+    "title": "Hotel Map",
+    "subtitle": "Orientation: sea is north",
+    "northIsUp": "top — sea, bottom — entrance/parking",
+    "landmarks": "Landmarks",
+    "floor": "Floor",
+    "zones": {
+      "sea": "Sea",
+      "beach": "Beach",
+      "pool": "Pools",
+      "spa": "Spa",
+      "restaurants": "Restaurants",
+      "hotel": "Hotel Building (rooms)",
+      "amphitheatre": "Amphitheatre",
+      "kids": "Kids Club",
+      "reception": "Reception",
+      "parking": "Parking"
+    }
   },
   "schedule": {
     "category": {

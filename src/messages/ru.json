@@ -9,6 +9,13 @@
       "reception": "Ресепшен"
     },
     "wifi_password": "Пароль: ElexusGuest2024",
+    "wifi": {
+      "title": "Wi-Fi",
+      "network": "Сеть: ElexusGuest",
+      "passwordLabel": "Пароль",
+      "password": "ElexusGuest2024",
+      "close": "Понятно"
+    },
     "today": "Сегодня в отеле",
     "noSchedule": "Расписание обновляется"
   },
@@ -59,8 +66,27 @@
     "home": "Главная",
     "restaurants": "Рестораны",
     "included": "Включено",
-    "spa": "Спа",
+    "map": "Карта",
     "requests": "Запросы"
+  },
+  "map": {
+    "title": "Карта отеля",
+    "subtitle": "Ориентир: море — север",
+    "northIsUp": "вверху — море, внизу — вход/парковка",
+    "landmarks": "Объекты",
+    "floor": "Этаж",
+    "zones": {
+      "sea": "Море",
+      "beach": "Пляж",
+      "pool": "Бассейны",
+      "spa": "Спа",
+      "restaurants": "Рестораны",
+      "hotel": "Корпус отеля (номера)",
+      "amphitheatre": "Амфитеатр",
+      "kids": "Детский клуб",
+      "reception": "Ресепшен",
+      "parking": "Парковка"
+    }
   },
   "schedule": {
     "category": {

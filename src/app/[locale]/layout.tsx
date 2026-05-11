@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Nav from '@/components/Nav';
+import AddToHomeScreen from '@/components/AddToHomeScreen';
 
 export const metadata: Metadata = {
   title: 'Elexus Hotel & Resort',
@@ -31,7 +32,9 @@ export default async function LocaleLayout({
       <div className="max-w-md mx-auto min-h-screen bg-white shadow-sm relative">
         <main className="pb-20">{children}</main>
         <Nav />
+        <AddToHomeScreen />
       </div>
+      <script dangerouslySetInnerHTML={{ __html: `if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js'))}` }} />
     </NextIntlClientProvider>
   );
 }

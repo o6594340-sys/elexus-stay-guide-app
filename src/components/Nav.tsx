@@ -8,7 +8,7 @@ const tabs = [
   { key: 'home', href: '/', icon: '🏠' },
   { key: 'restaurants', href: '/restaurants', icon: '🍽' },
   { key: 'included', href: '/included', icon: '✅' },
-  { key: 'spa', href: '/spa', icon: '💆' },
+  { key: 'map', href: '/map', icon: '🗺️' },
   { key: 'requests', href: '/requests', icon: '📋' },
 ] as const;
 
