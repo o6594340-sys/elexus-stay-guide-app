@@ -69,6 +69,18 @@ export default function RequestsClient({
     }
   }, []);
 
+  // Sync status updates from CMS (cross-tab storage event)
+  useEffect(() => {
+    const handler = (e: StorageEvent) => {
+      if (e.key === REQUESTS_KEY) {
+        const reqs = localStorage.getItem(REQUESTS_KEY);
+        if (reqs) try { setRequests(JSON.parse(reqs)); } catch { /* ignore */ }
+      }
+    };
+    window.addEventListener('storage', handler);
+    return () => window.removeEventListener('storage', handler);
+  }, []);
+
   useEffect(() => {
     if (preselectedType) setType(preselectedType);
   }, [preselectedType]);
@@ -104,7 +116,7 @@ export default function RequestsClient({
     return () => { supabase?.removeChannel(channel); };
   }, [supabase, room, requests, saveRequests]);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!room.trim() || !type) return;
 
